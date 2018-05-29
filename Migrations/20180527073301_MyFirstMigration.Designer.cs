@@ -11,33 +11,26 @@ using System;
 namespace presurgeryapp.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20180527073301_MyFirstMigration")]
+    partial class MyFirstMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "2.0.3-rtm-10026")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("presurgeryapp.ClientApp.Models.Patient", b =>
+            modelBuilder.Entity("presurgeryapp.Models.Patient", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
                     b.Property<string>("Name");
 
-                    b.Property<string>("PatientResponse");
-
                     b.Property<string>("Phone");
 
                     b.Property<string>("SurgeryDate");
-
-                    b.Property<string>("SurgeryType");
-
-                    b.Property<string>("TextMessage1");
-
-                    b.Property<bool>("TextSent");
 
                     b.HasKey("Id");
 

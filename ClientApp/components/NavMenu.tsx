@@ -12,7 +12,7 @@ export class NavMenu extends React.Component<{}, {}> {
                         <span className='icon-bar'></span>
                         <span className='icon-bar'></span>
                     </button>
-                    <img src="/SwedishLogo.jpg" width="300px" id="logo" />
+                    <img src="/SwedishLogo.jpg" width="70%" id="logo" />
                 </div>
                 <div className='clearfix'></div>
                 <div className='navbar-collapse collapse'>

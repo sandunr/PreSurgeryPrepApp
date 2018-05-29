@@ -6,5 +6,5 @@ import { Schedule } from './components/Schedule';
 
 export const routes = <Layout>
     <Route exact path='/' component={ Home } />
-    <Route path='/schedule' component={ Schedule } />
+    <Route path='/schedule' component={Schedule} />
 </Layout>;

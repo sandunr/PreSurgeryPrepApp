@@ -11,9 +11,10 @@ using System;
 namespace presurgeryapp.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20180527075206_CreateDatabase")]
+    partial class CreateDatabase
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -27,17 +28,9 @@ namespace presurgeryapp.Migrations
 
                     b.Property<string>("Name");
 
-                    b.Property<string>("PatientResponse");
-
                     b.Property<string>("Phone");
 
                     b.Property<string>("SurgeryDate");
-
-                    b.Property<string>("SurgeryType");
-
-                    b.Property<string>("TextMessage1");
-
-                    b.Property<bool>("TextSent");
 
                     b.HasKey("Id");
 

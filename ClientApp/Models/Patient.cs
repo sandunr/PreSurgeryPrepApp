@@ -1,10 +1,23 @@
-namespace presurgeryapp.Models
+﻿using System.ComponentModel.DataAnnotations;
+using System;
+
+namespace presurgeryapp.ClientApp.Models
 {
-    public class Patient {
-        public int id { get; set; }
-        public string firstname { get; set; }
-        public string lastname { get; set; }
-        public string surgeryDate { get; set; }
-        public string phone { get; set; }
+    public class Patient
+    {
+        [Key]
+        public Guid Id { get; set; }
+
+        public string Name { get; set; }
+        
+        public string Phone { get; set; }
+        
+        public string SurgeryDate { get; set; }
+
+        public bool TextSent { get; set; }
+        
+        public string SurgeryType { get; set; }
+
+        public string PatientResponse { get; set; }
     }
 }
