@@ -20,8 +20,8 @@ namespace presurgeryapp.Controllers
         private List<ClientApp.Models.Patient> patients;
 
         // Find your Account Sid and Auth Token at twilio.com/console
-        const string accountSid = "AC9ae055b8e5382df1376ef3a23fa49d23";
-        const string authToken = "1630786dafe8b98bdd8ee3bf45c3ab27";
+        const string accountSid = "";
+        const string authToken = "";
 
         public ScheduleController(ApplicationDbContext context)
         {
