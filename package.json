@@ -34,7 +34,7 @@
   "dependencies": {
     "@starbird/react-bootstrap-datetimepicker": "^2.0.0",
     "@types/react-bootstrap-date-picker": "^4.0.5",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "dateformat": "^3.0.3",
     "moment": "^2.22.1",
     "react-bootstrap-date-picker": "^5.1.0",
